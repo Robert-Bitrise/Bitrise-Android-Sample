@@ -34,5 +34,6 @@ result3 = telnet.read_until(b"acceleration = 4:3:1", 3)
 print("4")
 print(result3.decode("utf-8"))
 bla = result3.decode("utf-8")
+print(bla)
 if "4:3:1" not in bla:
     raise Exception("expected acceleration not present")
